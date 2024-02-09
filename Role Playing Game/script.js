@@ -33,4 +33,4 @@ function fightDragon  () {
     console.log("Fighting dragon.");
 }
 
-
+button1.onclick = goStore
