@@ -24,6 +24,8 @@ const monsterHealthText   = document.querySelector('#monsterHealth')
 
 function goStore () {
     button1.innerText = "Купить 10 здоровья (10 золота)"
+    button2.innerText = "Купить оружие (30 золотых)"
+    button3.innerText = "Отправиться на городскую площадь"
 }
 
 function goCave  (){
