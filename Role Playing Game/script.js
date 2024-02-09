@@ -20,7 +20,17 @@ const monsterName   = document.querySelector('#monsterName')
 const monsterHealthText   = document.querySelector('#monsterHealth')
 
 //initialize buttons
+function goTown() {
+    button1.innerText = "Купить 10 здоровья (10 золота)"
+    button2.innerText = "Купить оружие (30 золотых)"
+    button3.innerText = "Отправиться на городскую площадь"
 
+    button1.onclick = buyHealth
+    button2.onclick = buyWeapon
+    button3.onclick = goTown
+
+    text.innerText = "Вы вошли в магазин"
+}
 
 function goStore () {
     button1.innerText = "Купить 10 здоровья (10 золота)"
@@ -43,7 +53,7 @@ function fightDragon  () {
 
 function buyHealth () {}
 function buyWeapon () {}
-function goTown() {}
+
 
 button1.onclick = goStore
 button2.onclick = goCave
