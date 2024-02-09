@@ -29,7 +29,7 @@ function goTown() {
     button2.onclick = goCave
     button3.onclick = fightDragon
 
-    text.innerText = "Вы находитесь на городской площади. Вы видите вывеску с надписью 'Магазин'"
+    text.innerText = "Вы находитесь на городской площади. Вы видите вывеску с надписью \"Магазин\"."
 }
 
 function goStore () {
