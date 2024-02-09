@@ -20,6 +20,8 @@ const monsterName   = document.querySelector('#monsterName')
 const monsterHealthText   = document.querySelector('#monsterHealth')
 
 //initialize buttons
+function update  (location) {}
+
 function goTown() {
     button1.innerText = "Отправиться в магазин"
     button2.innerText = "Отправиться в пещеру"
