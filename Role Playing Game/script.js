@@ -31,6 +31,12 @@ const locations = [{
         "button text": ["Купить 10 здоровья (10 золота)","Купить оружие (30 золотых)", "Отправиться на городскую площадь"],
         "button functions": [buyHealth, buyWeapon, goTown],
         text: "Вы вошли в магазин"
+    },
+    {
+        name: "Пещера",
+        "button text": ["Сразить слайм","Сразить клыкастое чудовище", "Отправиться на городскую площадь"],
+        "button functions": [fightSlime, fightBeast, goTown],
+        text: "Вы входите в пещеру. Вы видите несколько монстров"
     }
 
 ]
