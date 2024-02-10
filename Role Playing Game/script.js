@@ -36,15 +36,13 @@ const locations = [{
 ]
 
 function update  (location) {
-    button1.innerText = "Купить 10 здоровья (10 золота)"
-    button2.innerText = "Купить оружие (30 золотых)"
-    button3.innerText = "Отправиться на городскую площадь"
-
-    button1.onclick = buyHealth
-    button2.onclick = buyWeapon
-    button3.onclick = goTown
-
-    text.innerText = "Вы вошли в магазин"
+    button1.innerText = location["button text"][0];
+    button2.innerText = location["button text"][1];
+    button3.innerText = location["button text"][2];
+    button1.onclick = location["button functions"][0];
+    button2.onclick = location["button functions"][1];
+    button3.onclick = location["button functions"][2];
+    text.innerText = location.text;
 }
 
 function goTown() {
