@@ -22,7 +22,7 @@ const monsterHealthText   = document.querySelector('#monsterHealth')
 //initialize buttons
 const locations = [{
     name:"Городская площадь",
-    "button text":[]
+    "button text":["Отправиться в магазин","Отправиться в пещеру","Сразить дракона"]
 }]
 
 function update  (location) {}
