@@ -25,7 +25,15 @@ const locations = [{
     "button text":["Отправиться в магазин","Отправиться в пещеру","Сразить дракона"],
     "button functions":[goStore,goCave,fightDragon],
     text:"Вы находитесь на городской площади. Вы видите вывеску с надписью \"Магазин\"."
-}]
+},
+    {
+        name: "Магазин",
+        "button text": ["Купить 10 здоровья (10 золота)","Купить оружие (30 золотых)", "Отправиться на городскую площадь"],
+        "button functions": [buyHealth, buyWeapon, goTown],
+        text: "Вы вошли в магазин"
+    }
+
+]
 
 function update  (location) {}
 
