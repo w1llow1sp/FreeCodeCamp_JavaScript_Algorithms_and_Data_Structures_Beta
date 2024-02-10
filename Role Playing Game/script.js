@@ -35,21 +35,7 @@ const locations = [{
 
 ]
 
-function update  (location) {}
-
-function goTown() {
-    button1.innerText = "Отправиться в магазин"
-    button2.innerText = "Отправиться в пещеру"
-    button3.innerText = "Сразить дракона"
-
-    button1.onclick = goStore
-    button2.onclick = goCave
-    button3.onclick = fightDragon
-
-    text.innerText = "Вы находитесь на городской площади. Вы видите вывеску с надписью \"Магазин\"."
-}
-
-function goStore () {
+function update  (location) {
     button1.innerText = "Купить 10 здоровья (10 золота)"
     button2.innerText = "Купить оружие (30 золотых)"
     button3.innerText = "Отправиться на городскую площадь"
@@ -59,6 +45,14 @@ function goStore () {
     button3.onclick = goTown
 
     text.innerText = "Вы вошли в магазин"
+}
+
+function goTown() {
+
+}
+
+function goStore () {
+
 }
 
 function goCave  (){
