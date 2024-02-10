@@ -62,6 +62,8 @@ function fightDragon  () {
 
 function buyHealth () {}
 function buyWeapon () {}
+function fightSlime   (){}
+function fightBeast (){}
 
 
 button1.onclick = goStore
