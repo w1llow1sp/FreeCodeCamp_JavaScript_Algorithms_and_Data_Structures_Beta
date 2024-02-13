@@ -67,13 +67,13 @@ function fightDragon  () {
 }
 
 function buyHealth () {
-    //gold = gold -10
-    gold -= 10
-    health +=10
+    if( gold >= 10) {
+        gold -= 10
+        health +=10
+        goldText.innerText = gold;
+        healthText.innerText = health;
+    }
 
-    // Update the innerText of goldText and healthText
-    goldText.innerText = gold;
-    healthText.innerText = health;
 }
 function buyWeapon () {}
 function fightSlime   (){}
