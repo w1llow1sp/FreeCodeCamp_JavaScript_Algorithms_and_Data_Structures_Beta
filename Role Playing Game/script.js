@@ -89,6 +89,7 @@ function buyWeapon () {
         gold -=30
         currentWeapon++
         goldText.innerText = gold;
+        let newWeapon =weapons
         text.innerText  = "Теперь у вас есть новое оружие"
     }
 }
