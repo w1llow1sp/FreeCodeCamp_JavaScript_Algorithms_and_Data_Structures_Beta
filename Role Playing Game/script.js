@@ -90,7 +90,7 @@ function buyWeapon () {
         currentWeapon++
         goldText.innerText = gold;
         let newWeapon =weapons[currentWeapon].name
-        text.innerText  = "Теперь у вас есть новое оружие"
+        text.innerText  = "Теперь у вас есть " + newWeapon + "."
     }
 }
 function fightSlime   (){}
