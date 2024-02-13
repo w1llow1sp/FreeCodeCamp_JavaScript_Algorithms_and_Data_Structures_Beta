@@ -60,13 +60,16 @@ function goStore () {
 }
 
 function goCave  (){
-    console.log("Going to cave.");
+   update(locations[2])
 }
 function fightDragon  () {
     console.log("Fighting dragon.");
 }
 
-function buyHealth () {}
+function buyHealth () {
+    gold = gold -10
+    health = health +10
+}
 function buyWeapon () {}
 function fightSlime   (){}
 function fightBeast (){}
