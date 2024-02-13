@@ -70,6 +70,10 @@ function buyHealth () {
     //gold = gold -10
     gold -= 10
     health +=10
+
+    // Update the innerText of goldText and healthText
+    goldText.innerText = gold;
+    healthText.innerText = health;
 }
 function buyWeapon () {}
 function fightSlime   (){}
