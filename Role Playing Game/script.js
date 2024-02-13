@@ -88,6 +88,8 @@ function buyWeapon () {
     if(gold>=30){
         gold -=30
         currentWeapon++
+        goldText.innerText = gold;
+        text.innerText  = "Теперь у вас есть новое оружие"
     }
 }
 function fightSlime   (){}
