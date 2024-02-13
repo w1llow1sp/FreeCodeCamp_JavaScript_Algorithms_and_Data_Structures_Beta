@@ -21,7 +21,12 @@ const monsterHealthText   = document.querySelector('#monsterHealth')
 
 //initialize buttons
 
-const weapons = []
+const weapons = [
+    {name:"палка",power:5},
+    {name:"кинжал",power:30},
+    {name:"когтистый молот",power:50},
+    {name:"меч",power:100},
+]
 const locations = [{
     name:"Городская площадь",
     "button text":["Отправиться в магазин","Отправиться в пещеру","Сразить дракона"],
