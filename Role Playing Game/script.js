@@ -90,6 +90,7 @@ function buyWeapon () {
         currentWeapon++
         goldText.innerText = gold;
         let newWeapon =weapons[currentWeapon].name
+        inventory.push(newWeapon)
         text.innerText  = "Теперь у вас есть " + newWeapon + "."
     }
 }
