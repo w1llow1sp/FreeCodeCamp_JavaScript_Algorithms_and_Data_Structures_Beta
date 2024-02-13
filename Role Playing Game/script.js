@@ -72,6 +72,8 @@ function buyHealth () {
         health +=10
         goldText.innerText = gold;
         healthText.innerText = health;
+    } else {
+        text.innerText ="У вас недостаточно золота, чтобы купить здоровье."
     }
 
 }
