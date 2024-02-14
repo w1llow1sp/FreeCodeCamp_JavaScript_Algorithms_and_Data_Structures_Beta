@@ -111,6 +111,7 @@ function sellWeapon() {
         goldText.innerText = gold
         gold += 15
         let currentWeapon = inventory.shift()
+        text.innerText = "Вы продали" + currentWeapon +"."
     }
 }
 
