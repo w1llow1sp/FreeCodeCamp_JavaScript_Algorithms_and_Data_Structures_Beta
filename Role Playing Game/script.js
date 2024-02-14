@@ -103,7 +103,7 @@ function buyWeapon() {
         text.innerText = "У вас уже есть самое мощное оружие!"
         button2.innerText = "Продать оружие за 15 золотых"
         button2.onclick = sellWeapon
-    }
+    }}
 
     function fightSlime() {
     }
