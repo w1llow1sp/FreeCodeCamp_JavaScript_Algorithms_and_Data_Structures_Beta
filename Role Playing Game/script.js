@@ -92,7 +92,7 @@ function buyWeapon () {
         let newWeapon =weapons[currentWeapon].name
         inventory.push(newWeapon)
         text.innerText  = "Теперь у вас есть " + newWeapon + "."
-        text.innerText += " В вашем инвентаре есть: "
+        text.innerText += " В вашем инвентаре есть: "+ inventory;
     }
 }
 function fightSlime   (){}
