@@ -93,6 +93,8 @@ function buyWeapon () {
         inventory.push(newWeapon)
         text.innerText  = "Теперь у вас есть " + newWeapon + "."
         text.innerText += " В вашем инвентаре есть: "+ inventory;
+    } else {
+        text.innerText = "У вас недостаточно золота, чтобы купить оружие."
     }
 }
 function fightSlime   (){}
