@@ -98,7 +98,7 @@ function buyWeapon () {
          text.innerText = "У вас недостаточно золота, чтобы купить оружие."
      }
  } else  {
-
+     text.innerText = "У вас уже есть самое мощное оружие!"
  }
 }
 function fightSlime   (){}
