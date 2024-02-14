@@ -85,17 +85,21 @@ function buyHealth () {
 
 }
 function buyWeapon () {
-    if(gold>=30){
-        gold -=30
-        currentWeapon++
-        goldText.innerText = gold;
-        let newWeapon =weapons[currentWeapon].name
-        inventory.push(newWeapon)
-        text.innerText  = "Теперь у вас есть " + newWeapon + "."
-        text.innerText += " В вашем инвентаре есть: "+ inventory;
-    } else {
-        text.innerText = "У вас недостаточно золота, чтобы купить оружие."
-    }
+ if(currentWeapon < 3) {
+     if(gold>=30){
+         gold -=30
+         currentWeapon++
+         goldText.innerText = gold;
+         let newWeapon =weapons[currentWeapon].name
+         inventory.push(newWeapon)
+         text.innerText  = "Теперь у вас есть " + newWeapon + "."
+         text.innerText += " В вашем инвентаре есть: "+ inventory;
+     } else {
+         text.innerText = "У вас недостаточно золота, чтобы купить оружие."
+     }
+ } else  {
+
+ }
 }
 function fightSlime   (){}
 function fightBeast (){}
