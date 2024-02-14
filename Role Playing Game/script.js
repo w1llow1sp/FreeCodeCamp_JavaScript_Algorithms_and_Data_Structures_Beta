@@ -113,6 +113,8 @@ function sellWeapon() {
         let currentWeapon = inventory.shift()
         text.innerText = "Вы продали" + currentWeapon + "."
         text.innerText += " В вашем инвентаре есть: " + inventory + "."
+    } else {
+        text.innerText = "Не продавайте свое единственное оружие!"
     }
 }
 
