@@ -103,17 +103,21 @@ function buyWeapon() {
         text.innerText = "У вас уже есть самое мощное оружие!"
         button2.innerText = "Продать оружие за 15 золотых"
         button2.onclick = sellWeapon
-    }}
-
-    function fightSlime() {
     }
+}
 
-    function fightBeast() {
-    }
+function sellWeapon() {
+}
+
+function fightSlime() {
+}
+
+function fightBeast() {
+}
 
 
-    button1.onclick = goStore
-    button2.onclick = goCave
-    button3.onclick = fightDragon
+button1.onclick = goStore
+button2.onclick = goCave
+button3.onclick = fightDragon
 
 
