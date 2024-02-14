@@ -27,6 +27,12 @@ const weapons = [
     {name: "когтистый молот", power: 50},
     {name: "меч", power: 100},
 ]
+
+const monsters = [
+    {name: "слизь", level:2, health: 15},
+    {name: "клыкастый зверь", level:8, health: 60},
+    {name: "дракон", level:20, health:300}
+]
 const locations = [{
     name: "Городская площадь",
     "button text": ["Отправиться в магазин", "Отправиться в пещеру", "Сразить дракона"],
