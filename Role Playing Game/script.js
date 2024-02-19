@@ -153,6 +153,8 @@ function attack () {
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
     health -= monsters[fighting].level
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) +  1;
+    monsterHealthText.innerText = monsterHealth;
+    healthText.innerText = health
 
 
 }
