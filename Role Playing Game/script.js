@@ -164,6 +164,8 @@ function attack () {
 
 }
 function dodge () {}
+function defeatMonster  () {}
+function lose  () {}
 
 button1.onclick = goStore
 button2.onclick = goCave
