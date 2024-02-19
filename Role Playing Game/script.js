@@ -166,7 +166,9 @@ function attack () {
 function dodge () {
     text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
 }
-function defeatMonster  () {}
+function defeatMonster  () {
+    gold += Math.floor(monsters[fighting].level * 6.7)
+}
 function lose  () {}
 
 button1.onclick = goStore
