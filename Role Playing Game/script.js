@@ -50,6 +50,12 @@ const locations = [{
         "button text": ["Сразить слайм", "Сразить клыкастое чудовище", "Отправиться на городскую площадь"],
         "button functions": [fightSlime, fightBeast, goTown],
         text: "Вы входите в пещеру. Вы видите несколько монстров"
+    },
+    {
+        name: "Сражаться",
+        "button text": ["Атаковать", "Уклониться", "Убежать"],
+        "button functions": [attack, dodge, goTown],
+        text: "Вы сражаетесь с чудовищем."
     }
 
 ]
