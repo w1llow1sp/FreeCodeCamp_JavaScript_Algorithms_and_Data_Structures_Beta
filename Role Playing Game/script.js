@@ -163,7 +163,9 @@ function attack () {
 
 
 }
-function dodge () {}
+function dodge () {
+    text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
+}
 function defeatMonster  () {}
 function lose  () {}
 
