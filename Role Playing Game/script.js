@@ -148,7 +148,9 @@ function fightDragon() {
      monsterHealthText.innerText = monsterHealth;
  }
 
-function attack () {}
+function attack () {
+    text.innerText  =  monsters[fighting].name + "аттакует."
+}
 function dodge () {}
 
 button1.onclick = goStore
