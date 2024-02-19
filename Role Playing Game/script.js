@@ -151,6 +151,8 @@ function fightDragon() {
 function attack () {
     text.innerText  +=  monsters[fighting].name + "аттакует."
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
+    health -= monsters[fighting].level
+
 
 }
 function dodge () {}
