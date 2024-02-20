@@ -69,7 +69,13 @@ const locations = [
         "button text": ["ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?"],
         "button functions": [restart , restart , restart ],
         text: 'Вы умерли. &#x2620;'
-    }
+    },
+    {
+        name: "win",
+        "button text": ["ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?"],
+        "button functions": [restart , restart , restart ],
+        text: 'Вы победили дракона! ВЫ ВЫИГРАЛИ ИГРУ! &#x1F389;'
+    },
 
 ]
 
