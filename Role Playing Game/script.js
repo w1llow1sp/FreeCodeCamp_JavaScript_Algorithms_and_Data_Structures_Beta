@@ -169,6 +169,8 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
+function getMonsterAttackValue (level) {}
+
 function attack() {
     text.innerText += monsters[fighting].name + " атакует."
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
