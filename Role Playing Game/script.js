@@ -198,6 +198,10 @@ function attack() {
     }
 }
 
+function isMonsterHit() {
+    return Math.random() > .2
+}
+
 function dodge() {
     text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
 }
