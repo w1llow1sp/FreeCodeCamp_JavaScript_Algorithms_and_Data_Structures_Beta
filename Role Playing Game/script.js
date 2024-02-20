@@ -169,7 +169,9 @@ function goFight() {
     monsterHealthText.innerText = monsterHealth;
 }
 
-function getMonsterAttackValue (level) {}
+function getMonsterAttackValue (level) {
+    const hit = (level * 5) - (Math.floor(Math.random() * xp))
+}
 
 function attack() {
     text.innerText += monsters[fighting].name + " атакует."
