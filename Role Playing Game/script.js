@@ -4,7 +4,7 @@ let gold = 50;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
-let inventory = ['stick']
+let inventory = ['палка']
 
 
 const button1 = document.querySelector('#button1')
@@ -182,6 +182,18 @@ function defeatMonster  () {
 }
 function lose  () {
     update(locations[5])
+}
+function restart  () {
+    xp=0
+    health=100
+    gold=50
+    currentWeapon=0
+    inventory=['палка']
+
+    goldText.innerText = gold
+    healthText.innerText = health
+    xpText.innerText = xp
+    goTown()
 }
 
 button1.onclick = goStore
