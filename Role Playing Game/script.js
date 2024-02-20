@@ -67,6 +67,7 @@ const locations = [{
 ]
 
 function update(location) {
+    monsterStats.style.display = 'none';
     button1.innerText = location["button text"][0];
     button2.innerText = location["button text"][1];
     button3.innerText = location["button text"][2];
