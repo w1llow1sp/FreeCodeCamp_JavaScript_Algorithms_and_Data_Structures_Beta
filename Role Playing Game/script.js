@@ -164,19 +164,21 @@ function goFight() {
 }
 
 function attack() {
-    text.innerText += monsters[fighting].name + "аттакует."
+    text.innerText += monsters[fighting].name + " атакует."
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
     health -= monsters[fighting].level
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) +  1;
     monsterHealthText.innerText = monsterHealth;
     healthText.innerText = health
-    if (health <= 0) {
-        lose()
-    } else if (monsterHealth <= 0) {
-        defeatMonster()
+    if (health <=  0) {
+        lose();
+    } else if (monsterHealth <=  0) {
+        if (fighting ===  2) {
+            winGame();
+        } else {
+            defeatMonster();
+        }
     }
-
-
 }
 
 function dodge() {
