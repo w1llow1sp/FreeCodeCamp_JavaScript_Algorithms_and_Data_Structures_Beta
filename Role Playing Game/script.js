@@ -29,16 +29,17 @@ const weapons = [
 ]
 
 const monsters = [
-    {name: "слизь", level:2, health: 15},
-    {name: "клыкастый зверь", level:8, health: 60},
-    {name: "дракон", level:20, health:300}
+    {name: "слизь", level: 2, health: 15},
+    {name: "клыкастый зверь", level: 8, health: 60},
+    {name: "дракон", level: 20, health: 300}
 ]
-const locations = [{
-    name: "Городская площадь",
-    "button text": ["Отправиться в магазин", "Отправиться в пещеру", "Сразить дракона"],
-    "button functions": [goStore, goCave, fightDragon],
-    text: "Вы находитесь на городской площади. Вы видите вывеску с надписью \"Магазин\"."
-},
+const locations = [
+    {
+        name: "Городская площадь",
+        "button text": ["Отправиться в магазин", "Отправиться в пещеру", "Сразить дракона"],
+        "button functions": [goStore, goCave, fightDragon],
+        text: "Вы находитесь на городской площади. Вы видите вывеску с надписью \"Магазин\"."
+    },
     {
         name: "Магазин",
         "button text": ["Купить 10 здоровья (10 золота)", "Купить оружие (30 золотых)", "Отправиться на городскую площадь"],
@@ -60,8 +61,14 @@ const locations = [{
     {
         name: "Убить чудовище",
         "button text": ["Отправиться на городскую площадь", "Отправиться на городскую площадь", "Отправиться на городскую площадь"],
-        "button functions": [goTown , goTown , goTown ],
+        "button functions": [goTown, goTown, goTown],
         text: 'Умирая, монстр кричит "Арг!". Вы получаете очки опыта и находите золото.'
+    },
+    {
+        name: "Проиграть",
+        "button text": ["ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?"],
+        "button functions": [restart , restart , restart ],
+        text: 'Вы умерли. &#x2620;'
     }
 
 ]
@@ -134,35 +141,36 @@ function sellWeapon() {
 }
 
 function fightSlime() {
-    fighting =0
+    fighting = 0
     goFight()
 }
 
 function fightBeast() {
-    fighting =1
+    fighting = 1
     goFight()
 }
 
 function fightDragon() {
-    fighting =2
+    fighting = 2
     goFight()
 }
- function goFight() {
-    update(locations[3])
-     monsterHealth = monsters[fighting].health;
-    monsterStats.style.display ='block'
-     monsterName.innerText =  monsters[fighting].name;
-     monsterHealthText.innerText = monsterHealth;
- }
 
-function attack () {
-    text.innerText  +=  monsters[fighting].name + "аттакует."
+function goFight() {
+    update(locations[3])
+    monsterHealth = monsters[fighting].health;
+    monsterStats.style.display = 'block'
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
+}
+
+function attack() {
+    text.innerText += monsters[fighting].name + "аттакует."
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
     health -= monsters[fighting].level
-    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) +  1;
+    monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
     monsterHealthText.innerText = monsterHealth;
     healthText.innerText = health
-    if (health<=0) {
+    if (health <= 0) {
         lose()
     } else if (monsterHealth <= 0) {
         defeatMonster()
@@ -170,25 +178,29 @@ function attack () {
 
 
 }
-function dodge () {
+
+function dodge() {
     text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
 }
-function defeatMonster  () {
+
+function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7)
     xp += monsters[fighting].level
     goldText.innerText = gold
     xpText.innerText = xp
     update(locations[4])
 }
-function lose  () {
+
+function lose() {
     update(locations[5])
 }
-function restart  () {
-    xp=0
-    health=100
-    gold=50
-    currentWeapon=0
-    inventory=['палка']
+
+function restart() {
+    xp = 0
+    health = 100
+    gold = 50
+    currentWeapon = 0
+    inventory = ['палка']
 
     goldText.innerText = gold
     healthText.innerText = health
