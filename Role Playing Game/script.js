@@ -178,6 +178,9 @@ function getMonsterAttackValue (level) {
 function attack() {
     text.innerText += monsters[fighting].name + " атакует."
     text.innerText += " Вы атакуете его своими " + weapons[currentWeapon].name + ".";
+    if(isMonsterHit()) {
+
+    }
     health -= getMonsterAttackValue(monsters[fighting].level);
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) +  1;
     monsterHealthText.innerText = monsterHealth;
