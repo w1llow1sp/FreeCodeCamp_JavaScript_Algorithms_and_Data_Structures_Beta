@@ -180,7 +180,9 @@ function defeatMonster  () {
     xpText.innerText = xp
     update(locations[4])
 }
-function lose  () {}
+function lose  () {
+    update(locations[5])
+}
 
 button1.onclick = goStore
 button2.onclick = goCave
