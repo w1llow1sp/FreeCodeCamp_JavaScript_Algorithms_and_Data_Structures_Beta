@@ -264,7 +264,12 @@ function  pick (guess){
         text.innerText += "Wrong! You lose 10 health!"
         health-=10
         healthText.innerText= health
+        if( health <= 0) {
+            lose()
+
+        }
     }
+
 }
 function  pickTwo  (){
     pick(2)
