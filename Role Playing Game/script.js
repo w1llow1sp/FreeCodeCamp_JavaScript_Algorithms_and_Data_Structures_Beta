@@ -61,7 +61,7 @@ const locations = [
     {
         name: "Убить чудовище",
         "button text": ["Отправиться на городскую площадь", "Отправиться на городскую площадь", "Отправиться на городскую площадь"],
-        "button functions": [goTown, goTown, goTown],
+        "button functions": [goTown, goTown, easterEgg ],
         text: 'Умирая, монстр кричит "Арг!". Вы получаете очки опыта и находите золото.'
     },
     {
@@ -71,7 +71,7 @@ const locations = [
         text: 'Вы умерли. &#x2620;'
     },
     {
-        name: "win",
+        name: "Выиграть",
         "button text": ["ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?", "ПЕРЕИГРАТЬ?"],
         "button functions": [restart , restart , restart ],
         text: 'Вы победили дракона! ВЫ ВЫИГРАЛИ ИГРУ! &#x1F389;'
