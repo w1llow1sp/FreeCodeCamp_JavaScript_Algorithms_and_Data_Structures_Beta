@@ -253,6 +253,7 @@ function  pick (guess){
     while (numbers.length<10) {
       numbers.push( Math.floor(Math.random() * 11))
     }
+    text.innerText = "Вы выбрали " + guess + ". Вот случайные числа:";
 }
 function  pickTwo  (){
     pick(2)
