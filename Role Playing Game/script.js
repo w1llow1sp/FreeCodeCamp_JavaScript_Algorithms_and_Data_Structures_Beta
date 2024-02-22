@@ -76,6 +76,12 @@ const locations = [
         "button functions": [restart , restart , restart ],
         text: 'Вы победили дракона! ВЫ ВЫИГРАЛИ ИГРУ! &#x1F389;'
     },
+    {
+        name: "Пасхалка",
+        "button text": ["2", "8", "Пойти на площадь?"],
+        "button functions": [pickTwo , pickEight , goTown ],
+        text: 'Вы нашли секретную игру. Выберите число, указанное выше. Случайным образом будут выбраны десять чисел от 0 до 10. Если выбранное вами число совпадет с одним из случайных чисел, вы выиграете!'
+    },
 
 ]
 
@@ -197,7 +203,7 @@ function attack() {
         }
     }
     if(Math.random() <= .1 && inventory.length!==1) {
-        text.innerText += " Your "+inventory.pop() +" breaks."
+        text.innerText += " Твое "+inventory.pop() +" сломалось."
         currentWeapon--
     }
 }
