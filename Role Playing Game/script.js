@@ -242,6 +242,7 @@ function easterEgg () {
     update(locations[7])
 }
 
+function  pick (guess){}
 button1.onclick = goStore
 button2.onclick = goCave
 button3.onclick = fightDragon
