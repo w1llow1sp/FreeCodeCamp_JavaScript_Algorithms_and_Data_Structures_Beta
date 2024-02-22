@@ -238,6 +238,9 @@ function restart() {
     xpText.innerText = xp
     goTown()
 }
+function easterEgg () {
+    update(locations[7])
+}
 
 button1.onclick = goStore
 button2.onclick = goCave
