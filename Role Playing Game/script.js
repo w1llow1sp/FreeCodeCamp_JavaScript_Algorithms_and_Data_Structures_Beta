@@ -199,7 +199,7 @@ function attack() {
 }
 
 function isMonsterHit() {
-    return Math.random() > .2
+    return Math.random() > .2 || health < 20
 }
 
 function dodge() {
