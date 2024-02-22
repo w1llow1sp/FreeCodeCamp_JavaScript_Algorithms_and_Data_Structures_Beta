@@ -207,6 +207,7 @@ function isMonsterHit() {
 
 function dodge() {
     text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
+    currentWeapon--
 }
 
 function defeatMonster() {
