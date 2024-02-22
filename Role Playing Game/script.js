@@ -243,6 +243,12 @@ function easterEgg () {
 }
 
 function  pick (guess){}
+function  pickTwo  (){
+    pick(2)
+}
+function  pickEight (){
+    pick(8)
+}
 button1.onclick = goStore
 button2.onclick = goCave
 button3.onclick = fightDragon
