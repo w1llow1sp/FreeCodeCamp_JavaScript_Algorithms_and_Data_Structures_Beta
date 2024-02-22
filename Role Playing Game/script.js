@@ -256,7 +256,7 @@ function  pick (guess){
     text.innerText = "Вы выбрали " + guess + ". Вот случайные числа:/n";
     for (let i=0; i < 10; i++) {
         text.innerText += numbers[i] + "\n";
-    }
+    } if (numbers.includes(guess))  {}
 }
 function  pickTwo  (){
     pick(2)
