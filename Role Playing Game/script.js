@@ -254,7 +254,7 @@ function  pick (guess){
       numbers.push( Math.floor(Math.random() * 11))
     }
     text.innerText = "Вы выбрали " + guess + ". Вот случайные числа:/n";
-    for (let i=0; x < 5; x++) {
+    for (let i=0; i < 10; x++) {
 
     }
 }
