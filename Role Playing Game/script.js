@@ -196,8 +196,9 @@ function attack() {
             defeatMonster();
         }
     }
-    if(Math.random() <= .1) {
+    if(Math.random() <= .1 && inventory.length!==1) {
         text.innerText += " Your "+inventory.pop() +" breaks."
+        currentWeapon--
     }
 }
 
@@ -207,7 +208,7 @@ function isMonsterHit() {
 
 function dodge() {
     text.innerText = "Вы уклонились от атаки " + monsters[fighting].name + ".";
-    currentWeapon--
+
 }
 
 function defeatMonster() {
