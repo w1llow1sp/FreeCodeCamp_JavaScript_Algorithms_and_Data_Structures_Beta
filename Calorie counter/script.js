@@ -8,5 +8,6 @@ const output = document.getElementById('output')
 let isError = false
 
 function cleanInputString (str){
-    let regex=/[+-\s]/
+    let regex=/[+-\s]/g
+    return str.replace(regex,'')
 }
