@@ -16,3 +16,7 @@ function isInvalidInput (str) {
     let regex = /\d+e\d+/i
     return str.match(regex)
 }
+
+function addEntry () {
+    const targetId  = "#" + entryDropdown.value
+}
