@@ -13,5 +13,6 @@ function cleanInputString (str){
 }
 
 function isInvalidInput (str) {
-    let regex = /[0-9]+e[0-9]+/i
+    let regex = /\d+e\d+/i
+    return str.match(regex)
 }
