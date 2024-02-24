@@ -13,5 +13,5 @@ function cleanInputString (str){
 }
 
 function isInvalidInput (str) {
-    let regex = /e/
+    let regex = /[0-9]e[0-9]/i
 }
