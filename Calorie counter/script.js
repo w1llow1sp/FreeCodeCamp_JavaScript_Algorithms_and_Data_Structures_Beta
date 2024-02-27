@@ -31,6 +31,10 @@ function addEntry() {
 addEntryButton.addEventListener('click', addEntry)
 calorieCounter.addEventListener('submit',calculateCalories)
 
+function clearForm () {
+    const inputContainers = document.querySelectorAll('.input-container')
+}
+
 function calculateCalories(e) {
     e.preventDefault()
     isError = false
