@@ -29,6 +29,13 @@ function addEntry() {
 }
 
 addEntryButton.addEventListener('click', addEntry)
+function calculateCalories (e) {
+    e.preventDefault()
+    isError = false
+    const breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
+    const lunchNumberInputs = document.querySelectorAll('#lunch input[type=number]');
+}
+
 function getCaloriesFromInputs(list) {
 let calories =0
     for (const item of list) {
@@ -43,3 +50,5 @@ let calories =0
     }
     return calories
 }
+
+
