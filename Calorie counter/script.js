@@ -38,6 +38,8 @@ function clearForm () {
 
     }
     budgetNumberInput.value = ''
+    output.innerText =''
+    output.classList.add('hide')
 }
 
 function calculateCalories(e) {
