@@ -43,6 +43,7 @@ function calculateCalories (e) {
     let dinnerCalories  = getCaloriesFromInputs(dinnerNumberInputs)
     let snacksCalories  = getCaloriesFromInputs(snacksNumberInputs)
     let exerciseCalories  = getCaloriesFromInputs(exerciseNumberInputs)
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput])
 }
 
 function getCaloriesFromInputs(list) {
