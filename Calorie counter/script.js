@@ -19,17 +19,18 @@ function isInvalidInput(str) {
 
 function addEntry() {
     const targetInputContainer = document.querySelector(`#${entryDropdown.value} .input-container`)
-    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length +1;
+    const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
     const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
                          <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">
 <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
 <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories">`
 
-    targetInputContainer.insertAdjacentHTML('beforeend',HTMLString)
+    targetInputContainer.insertAdjacentHTML('beforeend', HTMLString)
 }
 
 addEntryButton.addEventListener('click', addEntry)
-function calculateCalories (e) {
+
+function calculateCalories(e) {
     e.preventDefault()
     isError = false
     const breakfastNumberInputs = document.querySelectorAll('#breakfast input[type=number]');
@@ -39,10 +40,10 @@ function calculateCalories (e) {
     const exerciseNumberInputs = document.querySelectorAll('#exercise input[type=number]');
 
     let breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs)
-    let lunchCalories  = getCaloriesFromInputs(lunchNumberInputs)
-    let dinnerCalories  = getCaloriesFromInputs(dinnerNumberInputs)
-    let snacksCalories  = getCaloriesFromInputs(snacksNumberInputs)
-    let exerciseCalories  = getCaloriesFromInputs(exerciseNumberInputs)
+    let lunchCalories = getCaloriesFromInputs(lunchNumberInputs)
+    let dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs)
+    let snacksCalories = getCaloriesFromInputs(snacksNumberInputs)
+    let exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs)
     const budgetCalories = getCaloriesFromInputs([budgetNumberInput])
 
     if (isError) {
@@ -54,20 +55,21 @@ function calculateCalories (e) {
     const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit"
 
     output.innerHTML = `
-    <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>`;
+    <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
+<hr>`;
 }
 
 function getCaloriesFromInputs(list) {
-let calories =0
+    let calories = 0
     for (const item of list) {
         const currVal = cleanInputString(item.value)
-        const  invalidInputMatch = isInvalidInput(currVal)
+        const invalidInputMatch = isInvalidInput(currVal)
         if (invalidInputMatch) {
             alert(`Invalid Input: ${invalidInputMatch[0]}`);
             isError = true;
             return null;
         }
-        calories +=Number(currVal)
+        calories += Number(currVal)
     }
     return calories
 }
