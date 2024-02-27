@@ -39,6 +39,7 @@ let calories =0
             isError = true;
             return null;
         }
-
+        calories +=Number(currVal)
     }
+    return calories
 }
