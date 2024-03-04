@@ -57,5 +57,6 @@ const renderSongs = (array) => {
 </li>`
 
     }).join("");
-    return songsHTML;
+    playlistSongs.innerHTML = songsHTML;
+
 };
