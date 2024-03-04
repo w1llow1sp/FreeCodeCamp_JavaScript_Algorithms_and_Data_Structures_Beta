@@ -28,3 +28,5 @@ let allSongs = [
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/still-learning.mp3",
     }
 ]
+
+const audio = new Audio()
