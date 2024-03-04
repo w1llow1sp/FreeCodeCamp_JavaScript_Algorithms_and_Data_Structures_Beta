@@ -56,6 +56,6 @@ const renderSongs = (array) => {
             </button>
 </li>`
 
-    });
+    }).join("");
     return songsHTML;
 };
