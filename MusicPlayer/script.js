@@ -30,3 +30,4 @@ let allSongs = [
 ]
 
 const audio = new Audio()
+let userData={}
