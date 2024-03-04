@@ -61,5 +61,9 @@ const renderSongs = (array) => {
 };
 renderSongs(userData?.songs)
 const sortSongs = () => {
-    userData?.songs.sort((a,b) =>{})
+    userData?.songs.sort((a,b) =>{
+        if (a.title < b.title) {
+            return -1
+        }
+    })
 }
