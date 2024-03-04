@@ -30,4 +30,6 @@ let allSongs = [
 ]
 
 const audio = new Audio()
-let userData={}
+let userData={
+    songs:[...allSongs]
+}
