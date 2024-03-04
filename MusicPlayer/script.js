@@ -59,7 +59,7 @@ const renderSongs = (array) => {
     }).join("");
     playlistSongs.innerHTML = songsHTML;
 };
-renderSongs(userData?.songs)
+renderSongs(sortSongs())
 const sortSongs = () => {
     userData?.songs.sort((a,b) =>{
         if (a.title < b.title) {
