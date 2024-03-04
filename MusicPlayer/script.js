@@ -45,6 +45,7 @@ const renderSongs = (array) => {
           <span class="playlist-song-artist">${song.artist}</span>
           <span class="playlist-song-duration">${song.duration}</span>
             </button>
+           
 </li>`
 
     });
