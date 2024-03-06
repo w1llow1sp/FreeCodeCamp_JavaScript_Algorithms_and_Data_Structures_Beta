@@ -119,4 +119,11 @@ const playNextSong  = () => {
 
 nextButton.addEventListener('click',playNextSong)
 
-const playPreviousSong  = () => {}
+const playPreviousSong  = () => {
+    if ( userData?.currentSong === null) {
+        return
+    } else  {
+        const currentSongIndex = getCurrentSongIndex()
+    }
+
+}
