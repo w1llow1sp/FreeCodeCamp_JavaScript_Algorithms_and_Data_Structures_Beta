@@ -83,5 +83,9 @@ const playSong = (id) => {
     userData.currentSong = song
     playButton.classList.add('playing')
     audio.play()
-    playButton.addEventListener('click',()=>{})
+    playButton.addEventListener('click',()=>{
+        if( !userData?.currentSong) {
+            playSong(userData?.songs[0].id)
+        }
+    })
 }
