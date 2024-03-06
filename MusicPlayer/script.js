@@ -91,6 +91,8 @@ const playSong = (id) => {
         } else {
             playSong(userData?.currentSong.id)
         }
+
+        highlightCurrentSong()
     })
 }
 
