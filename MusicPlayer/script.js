@@ -93,4 +93,6 @@ const playSong = (id) => {
         }
     })
 }
-const pauseSong = () => {}
+const pauseSong = () => {
+    userData.songCurrentTime = audio.currentTime;
+}
