@@ -105,3 +105,7 @@ pauseButton.addEventListener('click', pauseSong)
 const getCurrentSongIndex = () => {
    return  userData?.songs.indexOf(userData?.currentSong)
 }
+
+const playNextSong  = () => {
+
+}
