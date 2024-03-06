@@ -115,3 +115,6 @@ const playNextSong  = () => {
         playSong(nextSong.id)
     }
 }
+
+
+nextButton.addEventListener('click',playNextSong)
