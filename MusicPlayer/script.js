@@ -145,3 +145,5 @@ const highlightCurrentSong = () => {
     }
 
 }
+
+const setPlayerDisplay = () =>{}
