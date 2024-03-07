@@ -205,3 +205,4 @@ const deleteSong = (id) => {
 }
 
 
+audio.addEventListener('ended',()=>{})
