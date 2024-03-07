@@ -162,3 +162,4 @@ const setPlayButtonAccessibleText = () => {
 
 }
 
+const shuffle = () => {}
