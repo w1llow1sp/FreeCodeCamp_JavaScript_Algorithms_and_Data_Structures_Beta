@@ -155,5 +155,7 @@ const setPlayerDisplay = () => {
     playingSong.textContent = currentTitle ? currentTitle : '';
     songArtist.textContent = currentArtist ? currentArtist : '';
 };
-const setPlayButtonAccessibleText = () => {}
+const setPlayButtonAccessibleText = () => {
+    const song = userData?.currentSong || userData?.songs[0]
+}
 
