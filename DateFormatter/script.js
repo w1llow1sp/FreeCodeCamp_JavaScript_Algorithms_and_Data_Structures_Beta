@@ -8,6 +8,9 @@ const hours = date.getHours()
 const minutes = date.getMinutes()
 currentDateParagraph.textContent = formattedDate;
 dateOptionsSelectElement.addEventListener('change', ()=>{
-    switch (dateOptionsSelectElement.value) {}
+    switch (dateOptionsSelectElement.value) {
+        case 'yyyy-mm-dd':
+            currentDateParagraph.textContent = formattedDate;
+    }
 })
 
