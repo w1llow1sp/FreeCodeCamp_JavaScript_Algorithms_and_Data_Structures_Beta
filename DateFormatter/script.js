@@ -13,6 +13,7 @@ dateOptionsSelectElement.addEventListener('change', ()=>{
             currentDateParagraph.textContent = formattedDate
                 .split('-')
                 .reverse()
+                .join('-')
     }
 })
 
