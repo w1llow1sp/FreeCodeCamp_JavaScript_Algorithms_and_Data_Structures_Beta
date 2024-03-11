@@ -20,6 +20,13 @@ const myFavoriteFootballTeam  = {
             number: 1,
             isCaptain: false,
             nickname: null
+        },
+        {
+            name: "Sergio Batista",
+            position: "midfielder",
+            number: 2,
+            isCaptain: false,
+            nickname: null
         }
     ]
 }
