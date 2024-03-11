@@ -57,6 +57,9 @@ playersDropdownList.addEventListener('change',(e)=>{
         case 'nickname':
             setPlayerCards(players.filter((player) => player.nickname !== null));
             break;
+        case 'forward':
+            setPlayerCards(players.filter((player) => player.position === "forward"));
+            break;
     }
 })
 
