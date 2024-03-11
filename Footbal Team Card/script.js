@@ -66,6 +66,9 @@ playersDropdownList.addEventListener('change',(e)=>{
         case 'defender':
             setPlayerCards(players.filter((player) => player.position === "defender"));
             break;
+        case 'goalkeeper':
+            setPlayerCards(players.filter((player) => player.position === "goalkeeper"));
+            break;
     }
 })
 
