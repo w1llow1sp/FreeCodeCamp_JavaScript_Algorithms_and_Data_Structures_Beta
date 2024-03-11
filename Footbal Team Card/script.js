@@ -33,3 +33,4 @@ const myFavoriteFootballTeam  = {
 
 Object.freeze(myFavoriteFootballTeam)
 const sport = myFavoriteFootballTeam.sport
+const team  = myFavoriteFootballTeam.team
