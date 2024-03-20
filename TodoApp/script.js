@@ -23,3 +23,7 @@ openTaskFormBtn.addEventListener('click',() => {
 closeTaskFormBtn.addEventListener('click',()=>{
     confirmCloseDialog.showModal()
 })
+
+cancelBtn.addEventListener('click', () =>{
+    confirmCloseDialog.close()
+})
