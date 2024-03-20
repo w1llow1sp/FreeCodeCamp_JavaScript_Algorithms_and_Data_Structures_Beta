@@ -19,3 +19,7 @@ let currentTask ={}
 openTaskFormBtn.addEventListener('click',() => {
     taskForm.classList.toggle("hidden")
 })
+
+closeTaskFormBtn.addEventListener('click',()=>{
+    confirmCloseDialog.showModal()
+})
